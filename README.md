@@ -78,8 +78,7 @@ if = 10       # كلمة محجوزة
 2. **تجنب الأرقام في البداية**:
    - لا يمكن أن يبدأ اسم المتغير برقم.
    ```python
-   # غير قانوني
-   2myvar = "John"  # خطأ
+   2myvar = "John"  #  خطأ
    ```
 
 3. **استخدام الأحرف والأرقام وحرف التسطير**:
@@ -172,9 +171,8 @@ print(type(y))  # الإخراج: <class 'str'>
 
 #### مثال:
 ```python
-x = "John"
-# هو نفسه كالتالي
-x = 'John'
+x = "John" # هو نفسه كالتالي
+x = 'John' 
 ```
 في هذا المثال، لا يهم إذا استخدمت علامات الاقتباس المفردة أو المزدوجة؛ كلاهما يؤديان نفس الغرض.
 
@@ -360,8 +358,7 @@ print(type(x))  # سيظهر: <class 'float'>
 print(type(y))  # سيظهر: <class 'float'>
 print(type(z))  # سيظهر: <class 'float'>
 
-# أمثلة على الأعداد العائمة بصيغة علمية
-x = 35e3     # 35 * 10^3 = 35000.0
+x = 35e3     # 35 * 10^3 = 35000.0                # أمثلة على الأعداد العائمة بصيغة علمية   
 y = 12E4     # 12 * 10^4 = 120000.0
 z = -87.7e100 # -87.7 * 10^100
 
@@ -562,36 +559,27 @@ print(z)  # الإخراج: 3.0
 بالتأكيد! إليك مثال عملي يوضح كيفية استخدام دوال التحويل (casting) في بايثون لتحويل القيم بين الأنواع المختلفة:
 
 ```python
-# تحويل إلى عدد صحيح
-# تحويل من عدد عشري إلى عدد صحيح (الأجزاء العشرية تُزال)
-float_number = 5.97
-integer_number = int(float_number)
+float_number = 5.97     # تحويل إلى عدد صحيح
+integer_number = int(float_number)  # تحويل من عدد عشري إلى عدد صحيح (الأجزاء العشرية تُزال)
 print("عدد صحيح:", integer_number)  # Output: عدد صحيح: 5
 
-# تحويل من سلسلة نصية إلى عدد صحيح
-string_number = "123"
+string_number = "123"     # تحويل من سلسلة نصية إلى عدد صحيح
 integer_number_from_string = int(string_number)
 print("عدد صحيح من سلسلة نصية:", integer_number_from_string)  # Output: عدد صحيح من سلسلة نصية: 123
 
-# تحويل إلى عدد عشري
-# تحويل من عدد صحيح إلى عدد عشري
-integer_number = 10
-float_number = float(integer_number)
+integer_number = 10     # تحويل إلى عدد عشري
+float_number = float(integer_number)     # تحويل من عدد صحيح إلى عدد عشري
 print("عدد عشري من عدد صحيح:", float_number)  # Output: عدد عشري من عدد صحيح: 10.0
 
-# تحويل من سلسلة نصية إلى عدد عشري
-string_float = "3.14159"
+string_float = "3.14159"    # تحويل من سلسلة نصية إلى عدد عشري
 float_number_from_string = float(string_float)
 print("عدد عشري من سلسلة نصية:", float_number_from_string)  # Output: عدد عشري من سلسلة نصية: 3.14159
 
-# تحويل إلى سلسلة نصية
-# تحويل من عدد صحيح إلى سلسلة نصية
-integer_number = 42
-string_from_integer = str(integer_number)
+integer_number = 42      # تحويل إلى سلسلة نصية
+string_from_integer = str(integer_number)    # تحويل من عدد صحيح إلى سلسلة نصية
 print("سلسلة نصية من عدد صحيح:", string_from_integer)  # Output: سلسلة نصية من عدد صحيح: '42'
 
-# تحويل من عدد عشري إلى سلسلة نصية
-float_number = 7.89
+float_number = 7.89      # تحويل من عدد عشري إلى سلسلة نصية
 string_from_float = str(float_number)
 print("سلسلة نصية من عدد عشري:", string_from_float)  # Output: سلسلة نصية من عدد عشري: '7.89'
 ```
@@ -967,8 +955,7 @@ print("عمرك هو:", age)
 #### مثال:
 
 ```python
-# هذا تعليق
-print("Hello, world!")  # هذا تعليق آخر
+print("Hello, world!")  # هذا تعليق 
 ```
 
 #### أفضل الممارسات في الترميز
@@ -1092,30 +1079,25 @@ print(f"مرحبًا، اسمي {name} وعمري {age} عامًا.")
 #### برنامج لحساب مجموع عددين مدخلين من المستخدم
 
 ```python
-# طلب إدخال العدد الأول
-num1 = input("أدخل العدد الأول: ")
-# طلب إدخال العدد الثاني
-num2 = input("أدخل العدد الثاني: ")
+num1 = input("أدخل العدد الأول: ")    # طلب إدخال العدد الأول
 
-# تحويل المدخلات إلى أعداد صحيحة
-num1 = int(num1)
+num2 = input("أدخل العدد الثاني: ")    # طلب إدخال العدد الثاني
+
+num1 = int(num1)     # تحويل المدخلات إلى أعداد صحيحة
 num2 = int(num2)
 
-# حساب المجموع
-sum_result = num1 + num2
+sum_result = num1 + num2     # حساب المجموع
 
-# عرض النتيجة
-print(f"مجموع العددين هو: {sum_result}")
+print(f"مجموع العددين هو: {sum_result}")    # عرض النتيجة
+
 ```
 
 #### برنامج للتحقق من صلاحية كلمة المرور
 
 ```python
-# طلب إدخال كلمة المرور
-password = input("أدخل كلمة المرور: ")
+password = input("أدخل كلمة المرور: ")     # طلب إدخال كلمة المرور
 
-# التحقق من طول كلمة المرور
-if len(password) >= 8:
+if len(password) >= 8:     # التحقق من طول كلمة المرور
     print("كلمة المرور صالحة.")
 else:
     print("كلمة المرور قصيرة جدًا.")
@@ -1150,8 +1132,10 @@ else:
 
 #### مثال:
 
-```python
 # هذا تعليق يشرح أن الكود التالي يقوم بطباعة رسالة ترحيب
+
+
+```python
 print("مرحبًا بالعالم!")  # هذا تعليق يشرح أن الكود يطبع نصًا على الشاشة
 ```
 
@@ -1190,33 +1174,25 @@ print(a + b)
 #### مثال 1: شرح الدوال والمتغيرات
 
 ```python
-# هذه الدالة تحسب مساحة المستطيل
-def calculate_rectangle_area(length, width):
+def calculate_rectangle_area(length, width):    # هذه الدالة تحسب مساحة المستطيل
     return length * width
 
-# تعريف المتغيرات
 length = 10  # طول المستطيل
 width = 5    # عرض المستطيل
 
-# حساب المساحة
-area = calculate_rectangle_area(length, width)
+area = calculate_rectangle_area(length, width)     # حساب المساحة
 
-# طباعة المساحة
-print(f"مساحة المستطيل هي: {area}")
+print(f"مساحة المستطيل هي: {area}")     # طباعة المساحة
 ```
 
 #### مثال 2: شرح العمليات المعقدة
 
 ```python
-# قائمة تحتوي على درجات الطلاب
-grades = [90, 85, 70, 80, 95]
+grades = [90, 85, 70, 80, 95]      # قائمة تحتوي على درجات الطلاب
 
-# حساب متوسط الدرجات
-# نقوم بجمع الدرجات ثم نقسم الناتج على عدد الدرجات
-average_grade = sum(grades) / len(grades)
+average_grade = sum(grades) / len(grades)    # نقوم بجمع الدرجات ثم نقسم الناتج على عدد الدرجات
 
-# طباعة متوسط الدرجات
-print(f"متوسط الدرجات هو: {average_grade}")
+print(f"متوسط الدرجات هو: {average_grade}")    # طباعة متوسط الدرجات
 ```
 
 ### أفضل الممارسات في الترميز
@@ -1226,14 +1202,14 @@ print(f"متوسط الدرجات هو: {average_grade}")
 اختر أسماء تعبر عن وظيفة المتغير أو الدالة. هذا يجعل الكود أكثر قابلية للفهم.
 
 #### أمثلة:
+# أسماء واضحة للمتغيرات
+
 
 ```python
-# أسماء واضحة للمتغيرات
 student_name = "أحمد"
 student_age = 20
 
-# دالة تحسب مساحة الدائرة
-def calculate_circle_area(radius):
+def calculate_circle_area(radius):    # دالة تحسب مساحة الدائرة
     return 3.14 * (radius ** 2)
 ```
 
@@ -1244,22 +1220,19 @@ def calculate_circle_area(radius):
 #### مثال:
 
 ```python
-# دالة تحسب مساحة المستطيل
-def calculate_rectangle_area(length, width):
+def calculate_rectangle_area(length, width):     # دالة تحسب مساحة المستطيل
     return length * width
 
-# دالة تحسب مساحة الدائرة
-def calculate_circle_area(radius):
-    return 3.14 * (radius ** 2)
+def calculate_circle_area(radius):   # دالة تحسب مساحة الدائرة
+    return 3.14 * (radius ** 2)   
 
-# حساب مساحة مستطيل
-length = 10
+length = 10     # حساب مساحة مستطيل
 width = 5
-rectangle_area = calculate_rectangle_area(length, width)
+rectangle_area = calculate_rectangle_area(length, width)    
 print(f"مساحة المستطيل هي: {rectangle_area}")
 
-# حساب مساحة دائرة
-radius = 7
+radius = 7    # حساب مساحة دائرة
+
 circle_area = calculate_circle_area(radius)
 print(f"مساحة الدائرة هي: {circle_area}")
 ```
@@ -1271,8 +1244,7 @@ print(f"مساحة الدائرة هي: {circle_area}")
 #### أمثلة:
 
 ```python
-# تنسيق الكود بطريقة واضحة ومنظمة
-def calculate_rectangle_area(length, width):
+def calculate_rectangle_area(length, width):     # تنسيق الكود بطريقة واضحة ومنظمة
     return length * width
 
 length = 10
@@ -1288,17 +1260,13 @@ print(f"مساحة المستطيل هي: {area}")
 #### مثال:
 
 ```python
-# قائمة تحتوي على درجات الطلاب
-grades = [90, 85, 70, 80, 95]
+grades = [90, 85, 70, 80, 95]     # قائمة تحتوي على درجات الطلاب
 
-# حساب مجموع الدرجات
-total_grades = sum(grades)
+total_grades = sum(grades)    # حساب مجموع الدرجات
 
-# حساب متوسط الدرجات
-average_grade = total_grades / len(grades)
+average_grade = total_grades / len(grades)     # حساب متوسط الدرجات
 
-# طباعة متوسط الدرجات
-print(f"متوسط الدرجات هو: {average_grade}")
+print(f"متوسط الدرجات هو: {average_grade}")     # طباعة متوسط الدرجات
 ```
 
 ### الواجب المنزلي
